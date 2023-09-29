@@ -1,17 +1,27 @@
 package controllers
 
-func GetOrders() {
+import "github.com/gin-gonic/gin"
 
+func GetOrders() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+
+	}
 }
 
-func GetOrder() {
+func GetOrder() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
 
+	}
 }
 
-func CreateOrder() {
+func CreateOrder() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
 
+	}
 }
 
-func UpdateOrder() {
+func UpdateOrder() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
 
+	}
 }

@@ -1,17 +1,27 @@
 package controllers
 
-func GetUsers() {
+import "github.com/gin-gonic/gin"
 
+func GetUsers() gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
 }
 
-func GetUser() {
+func GetUser() gin.HandlerFunc {
+	return func(c *gin.Context) {
 
+	}
 }
 
-func Signup() {
+func Signup() gin.HandlerFunc {
+	return func(c *gin.Context) {
 
+	}
 }
 
-func Login() {
+func Login() gin.HandlerFunc {
+	return func(c *gin.Context) {
 
+	}
 }

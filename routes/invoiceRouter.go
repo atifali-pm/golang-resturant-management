@@ -1,14 +1,14 @@
 package routes
 
 import (
-	constroller "github.com/atifali-pm/golang-resturant-management/controllers"
+	controller "github.com/atifali-pm/golang-resturant-management/controllers"
 	"github.com/gin-gonic/gin"
 )
 
 func InvoiceRoutes(incomingRoutes *gin.Engine) {
 	incomingRoutes.GET("/invoices", controller.GetInvoices())
-	incomingRoutes.GET("/invoices/:invoice_id", constroller.GetInvoice())
-	incomingRoutes.POST("/invoices", constroller.CreateInvoice())
-	incomingRoutes.PATCH("/invoices/:invoice_id", constroller.UpdateInvoice())
+	incomingRoutes.GET("/invoices/:invoice_id", controller.GetInvoice())
+	incomingRoutes.POST("/invoices", controller.CreateInvoice())
+	incomingRoutes.PATCH("/invoices/:invoice_id", controller.UpdateInvoice())
 
 }
